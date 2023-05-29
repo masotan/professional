@@ -155,10 +155,10 @@ function overlayenter() {
        overlay.style.fontSize = "10vw"
        overlay.style.animation = 'fadeOutOverlay 1s ease forwards'; //starts overlay exit animation
        setDisplay(home);
-    }, 1200);
+    }, 1600);
     
 
     setTimeout (function() {
         overlay.remove();
-    }, 2200); // sets a delay for the function to remove the overlay after 2000 milliseconds
+    }, 2600); // sets a delay for the function to remove the overlay after 2000 milliseconds
 }
