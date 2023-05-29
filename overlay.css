@@ -1,0 +1,79 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4b3621;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation-fill-mode: forwards;
+}
+
+.overlay .content {
+    color: #fff;
+    text-align: center;
+}
+
+.overlay.content h1, p {
+    color: #fff;
+    text-align: center;
+}
+
+.overlay.content button {
+    background-color: white;
+    animation: breathe-orange-white 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor:pointer;
+    background-color: white;
+    padding: 10px 4px 10px 4px;
+    width: 200px;
+    border-radius: 10px;
+    margin:auto;
+    animation: fadeOut 2s;
+}
+
+.overlay .content button:hover {
+    background-color: saddlebrown;
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { background-color: white;
+        color:black;
+     }
+    100% { background-color: saddlebrown; 
+        color:white;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% { background-color: saddlebrown;
+        color:white;
+     }
+    100% { background-color: white; 
+        color: black;
+    }
+  }
+
+  @keyframes whiteout {
+    0% {}
+    100% { background-color: white;}
+  }
+
+  @keyframes expandout {
+    0% {background-color: white;
+        font-size: 50px;}
+    100% {background-color: none;
+        font-size:140px;}
+  }
+
+  @keyframes fadeOutOverlay {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel = "icon" href = 
+        "assets/icon.webp" 
+            type = "image/x-icon">
+        <link rel="stylesheet" href="stylesheet.css"/>
+       
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="overlayContent">
+                <p class="muteButton" onclick="muteToggle()">sound on</p>  
+                <h1>Welcome to Daniel Monteiro's Page</h1>
+                <p>Even simplicity is found in the raging behemoths of complexity</p>
+                
+                <!-- Add your desired content here -->
+                <button id="enterButton" onclick="overlayenter()"; >enter</button>
+            </div>
+        </div>
+           
+        <div id="navigationdiv">
+            <ul class="navigation">
+                <li><a href="#home" onclick="setDisplay(home)">Home</a></li>
+                <li><a href="#resume" onclick="setDisplay(resume)">Resume</a></li>
+                <li><a href="#projects" onclick="setDisplay(projects)">Projects</a></li>
+                <li><a href="#gallery" onclick="setDisplay(gallery)">Gallery</a></li>
+                <li><a href="#contact" onclick="setDisplay(contact)">Contact</a></li>
+                <li><a href="#mute" class="muteButton" onclick="muteToggle()">sound on</a></li>
+            </ul>
+        </div>
+
+        <audio id="bgm" width="0px" height="0px" src='assets/bgm/harvest.mp3' loop=1>
+        <source type="audio/mp3" />
+      Your browser does not support the audio tag.
+        </audio>
+
+        <div id="display">
+        <!--Code will be added here-->
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
