@@ -81,9 +81,9 @@ body {
 
   @keyframes expandout {
     0% {background-color: white;
-        font-size: 50px;}
+        font-size: 2vw;}
     100% {background-color: none;
-        font-size:140px;}
+        font-size: 10vw;}
   }
 
   @keyframes fadeOutOverlay {

@@ -145,14 +145,14 @@ function overlayenter() {
     
     setTimeout (function() {
         overlay.innerHTML = "<h1>Welcome</h1>";
-        overlay.style.fontSize = "50px"
+        overlay.style.fontSize = "2vw"
         overlay.style.animation = 'expandout 0.2s ease forwards'
      }, 1000);
 
 
     setTimeout (function() {
        console.log('test'); //nothing
-       overlay.style.fontSize = "140px"
+       overlay.style.fontSize = "10vw"
        overlay.style.animation = 'fadeOutOverlay 1s ease forwards'; //starts overlay exit animation
        setDisplay(home);
     }, 1200);
