@@ -121,6 +121,10 @@ ul.navigation li a:hover {
     background-color: #443b367c;
 }
 
+.listlanguagesnavigation li {
+    float:right;
+}
+
 @keyframes display-fadeinout {
     0% {opacity: 1;}
     50% {opacity: 0;}
