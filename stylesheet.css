@@ -121,6 +121,15 @@ ul.navigation li a:hover {
     background-color: #443b367c;
 }
 
+@keyframes display-fadeinout {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#display {
+}
+
 video {
     position: absolute;
     top: 0;
@@ -151,4 +160,69 @@ video {
     padding: 10vh 25vw 10vh 10vw;
     background: rgba(139, 69, 19,0.8);
     margin: 0;
+}
+
+.resume-container {
+    margin: 10vw;
+}
+
+.projects-container {
+    margin: 10vw;
+}
+
+.gallery-container {
+    margin: 10vw;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-item {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.2);
+  }
+
+  .gallery-item .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+
+.contacts-container {
+    margin: 10vw;
 }

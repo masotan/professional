@@ -12,6 +12,8 @@ enterButton = document.querySelector('#enterButton');
 
 overlaystylesheet = document.querySelector('#overlaystylesheet');
 
+display = document.querySelector('#display');
+
 //code to initialize page. adds navigation bar and display and place holders
 
 
@@ -50,6 +52,49 @@ resume = `
                     </div>     
                 </div>
             </div>
+            <div class="resume-container">
+            <h1>John Doe</h1>
+
+            <div class="section">
+              <h2>Contact Information</h2>
+              <ul>
+                <li><span class="title">Address:</span> 123 Main St, City, State, Zip</li>
+                <li><span class="title">Phone:</span> (123) 456-7890</li>
+                <li><span class="title">Email:</span> john.doe@email.com</li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Summary</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum gravida sem id hendrerit. Suspendisse potenti. Aenean finibus felis id est suscipit tincidunt. Nam ultricies purus a ante consequat, id dignissim nisi convallis. Vivamus porttitor nisl eu arcu vulputate viverra. Duis sed fermentum sem.</p>
+            </div>
+          
+            <div class="section">
+              <h2>Education</h2>
+              <ul>
+                <li>
+                  <span class="title">Bachelor of Science in Computer Science</span>
+                  <br>
+                  <span class="subtitle">University of XYZ, Year</span>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Experience</h2>
+              <ul>
+                <li>
+                  <span class="title">Software Engineer</span>
+                  <br>
+                  <span class="subtitle">ABC Company, Dates</span>
+                  <ul>
+                    <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            </div>
             
 
 `;
@@ -66,6 +111,62 @@ projects = `
                         <p>Projects that I have worked on</p>
                     </div>     
                 </div>
+            </div>
+
+            <div class="projects-container">
+            <div class="section">
+              <h2>Project 1</h2>
+              <ul>
+                <li>
+                  <span class="title">Project Name:</span> Project 1 Name
+                </li>
+                <li>
+                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  <span class="title">Technologies Used:</span> HTML, CSS, JavaScript
+                </li>
+                <li>
+                  <span class="title">Role:</span> Developer
+                </li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Project 2</h2>
+              <ul>
+                <li>
+                  <span class="title">Project Name:</span> Project 2 Name
+                </li>
+                <li>
+                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  <span class="title">Technologies Used:</span> Python, Django
+                </li>
+                <li>
+                  <span class="title">Role:</span> Full Stack Developer
+                </li>
+              </ul>
+            </div>
+          
+            <div class="section">
+              <h2>Project 3</h2>
+              <ul>
+                <li>
+                  <span class="title">Project Name:</span> Project 3 Name
+                </li>
+                <li>
+                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li>
+                  <span class="title">Technologies Used:</span> React, Node.js
+                </li>
+                <li>
+                  <span class="title">Role:</span> Frontend Developer
+                </li>
+              </ul>
+            </div>
             </div>
              
 
@@ -84,10 +185,37 @@ gallery = `
                     </div>     
                 </div>
             </div>
+
+            <div class="gallery-container">
+            <div class="gallery">
+            <div class="gallery-item">
+              <img src="assets/city.jpg" alt="South Korea from the Sky">
+              <div class="gallery-overlay">South Korea from the Sky</div>
+            </div>
+        
+            <div class="gallery-item">
+              <img src="assets/pictures/1.jpg" alt="Racoon">
+              <div class="gallery-overlay">Racoon</div>
+            </div>
+        
+            <div class="gallery-item">
+              <img src="assets/pictures/5.jpg" alt="The clouds from the plane">
+              <div class="gallery-overlay">The clouds from the plane</div>
+            </div>
+        
+            <!-- Add more gallery items as needed -->
+        
+          </div>
+        
+          <script>
+            // Optional: You can add JavaScript code for additional functionality here
+          </script>
+            </div>
+
+            
             
 
 `;
-
 //contact page code
 contact = `
 
@@ -101,6 +229,18 @@ contact = `
                     </div>     
                 </div>
             </div>
+
+            <div class="contacts-container">
+                <p>Thank you for your interest in reaching out to me. Please use the following contact information to get in touch.</p>
+
+  <h2>Contact Information</h2>
+  <ul>
+    <li><strong>Company Name:</strong> McDonalds</li>
+    <li><strong>Address:</strong> Victory Road</li>
+    <li><strong>Phone:</strong> 000-000-0000</li>
+    <li><strong>Email:</strong> thisistotallymy@email.com</li>
+  </ul>
+            </div>
             
 
 `;
@@ -108,12 +248,18 @@ contact = `
 
 //this function should set the display to anything
 function setDisplay(anything) {
-document.querySelector('#display').setHTML(anything);
+    display.setHTML(anything);
 }
 
 //this function should navigate to the desired page by clearing the page and loading the page
 function navigate(page) {
-    
+    display.style.animation = "display-fadeinout 1s";
+    setTimeout(function() {
+        setDisplay(page);
+    }, 500);
+    setTimeout(function() {
+        display.style.animation = "";
+    }, 1000);
 }
 
 //this function should mute sound if unmuted and vice versa

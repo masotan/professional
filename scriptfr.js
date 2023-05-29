@@ -12,6 +12,8 @@ enterButton = document.querySelector('#enterButton');
 
 overlaystylesheet = document.querySelector('#overlaystylesheet');
 
+display = document.querySelector('#display');
+
 //code to initialize page. adds navigation bar and display and place holders
 
 
@@ -102,13 +104,24 @@ contact = `
                 </div>
             </div>
             
+            <div class="contacts-container>
+                <p>Thank you for your interest in reaching out to us. We would be delighted to hear from you. Please use the following contact information or the provided contact form to get in touch with us.</p>
+
+  <h2>Contact Information</h2>
+  <ul>
+    <li><strong>Company Name:</strong> Your Company Name</li>
+    <li><strong>Address:</strong> Your Company Address</li>
+    <li><strong>Phone:</strong> Your Company Phone Number</li>
+    <li><strong>Email:</strong> Your Company Email Address</li>
+  </ul>
+            </div>
 
 `;
 
 
 //this function should set the display to anything
 function setDisplay(anything) {
-document.querySelector('#display').setHTML(anything);
+display.setHTML(anything);
 }
 
 //this function should navigate to the desired page by clearing the page and loading the page
