@@ -251,6 +251,16 @@ function setDisplay(anything) {
     display.setHTML(anything);
 }
 
+//makes the website more interactive on mobile phones
+
+/*const menuToggle = document.querySelector('.menu-toggle');
+const navigation = document.querySelector('nav');
+*/
+menuToggle.addEventListener('click', function() {
+  navigation.classList.toggle('active');
+});
+
+
 //this function should navigate to the desired page by clearing the page and loading the page
 function navigate(page) {
     display.style.animation = "display-fadeinout 1s";
@@ -316,12 +326,12 @@ function setLanguage(language) {
 
 // setting up navigation variables
 
-homenavigation = document.querySelector('#home-navigation');
-resumenavigation = document.querySelector('#resume-navigation');
-projectsnavigation = document.querySelector('#projects-navigation');
-gallerynavigation = document.querySelector('#gallery-navigation');
-contactnavigation = document.querySelector('#contact-navigation');
-mutenavigation = document.querySelector('#mute-navigation');
+const homenavigation = document.querySelector('#home-navigation');
+const resumenavigation = document.querySelector('#resume-navigation');
+const projectsnavigation = document.querySelector('#projects-navigation');
+const gallerynavigation = document.querySelector('#gallery-navigation');
+const contactnavigation = document.querySelector('#contact-navigation');
+const mutenavigation = document.querySelector('#mute-navigation');
 
 function setNavigationLanguage(language) {
   homenavigation.textContent = homenavigationlanguage(language); // gets the home navigation language and sets it to home navigation
