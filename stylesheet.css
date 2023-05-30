@@ -60,6 +60,16 @@ body {
     animation: fadeIn 2s;
 }
 
+.overlayContent a {
+    color:white;
+    text-decoration: none;
+}
+
+.overlayContent a:hover {
+    color:rgb(214, 214, 214);
+    text-decoration: none;
+}
+
 @keyframes fadeIn {
     0% { background-color: white;
         color:black;

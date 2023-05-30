@@ -14,6 +14,8 @@ overlaystylesheet = document.querySelector('#overlaystylesheet');
 
 display = document.querySelector('#display');
 
+activeLanguage = "english"; // default language is english
+
 //code to initialize page. adds navigation bar and display and place holders
 
 
@@ -283,6 +285,42 @@ function muteToggle() {
   }
 }
 
+function getWelcome(language) {
+  if(language == "english") {
+    return "welcome"
+  }
+  if(language == "french") {
+    return "bienvenue"
+  }
+  if(language == "chinese") {
+    return "欢迎"    
+  }
+  if(language == "japanese") {
+    return "ようこそ"    
+  }
+  if(language == "thai") {
+    return "ต้อนรับ"    
+  }
+}
+
+function getOverlayHeadingLanguage(language) {
+  if(language == "english") {
+    return "Welcome to Daniel Monteiro's Page"
+  }
+  if(language == "french") {
+    return "Bienvenue en Page de Daniel Monteiro"
+  }
+  if(language == "chinese") {
+    return "欢迎来到丹尼尔·蒙泰罗的页面"    
+  }
+  if(language == "japanese") {
+    return "ダニエル・モンテイロのページへようこそ"    
+  }
+  if(language == "thai") {
+    return "ยินดีต้อนรับสู่เว็บไซต์ของดาเนียล มอนเตโร"    
+  }
+}
+
 // overlay enter button function
 function overlayenter() {
     enterButton.remove();
@@ -290,10 +328,10 @@ function overlayenter() {
     bgm.currentTime = 56; // sets bgm start time to 50 seconds
     bgm.volume = 0.03; // sets bgm volume to  3%
     bgm.play(); // plays bgm
-    
+    var entryText = getWelcome(activeLanguage); //get welcome in correct language and set welcome to entry text
     
     setTimeout (function() {
-        overlay.innerHTML = "<h1>Welcome</h1>";
+        overlay.innerHTML = "<h1>" + entryText + "</h1>";
         overlay.style.fontSize = "2vw"
         overlay.style.animation = 'expandout 0.2s ease forwards'
      }, 1000);
@@ -315,13 +353,23 @@ function overlayenter() {
 function setLanguage(language) {
   body.style.animation = "display-fadeinout 1s";
     setTimeout(function() {
+      setOverlayHeading(language);//sets overlay heading to target language
       setNavigationLanguage(language);//navigation should change to target language
       setContentLanguage(language);//content should change to target language
+      activeLanguage = language; // sets language as active language
     }, 500);
     setTimeout(function() {
         body.style.animation = "";
     }, 1000);
   
+}
+
+// setting up overlay variables
+
+overlayHeading = document.querySelector('#overlayHeading');
+
+function setOverlayHeading(language) {
+overlayHeading.innerHTML = getOverlayHeadingLanguage(language);
 }
 
 // setting up navigation variables

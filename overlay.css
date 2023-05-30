@@ -43,6 +43,10 @@
     animation: fadeIn 2s;
 }
 
+a {
+    color:white;
+}
+
 @keyframes fadeIn {
     0% { background-color: white;
         color:black;
