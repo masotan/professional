@@ -7,6 +7,41 @@
         "assets/icon.png" 
             type = "image/x-icon">
         <link rel="stylesheet" href="stylesheet.css"/>
+        <style>
+
+.toggle-btn {
+    display: none;
+    width: -webkit-fill-available;
+    display: none;
+    margin: 0;
+    padding: 3vh;
+    border: 0;
+}
+
+            @media screen and (max-width: 600px) {
+  .navigationdiv li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    background: repeating-linear-gradient(45deg, black, transparent 100px);
+}
+}
+        </style>
+       
     </head>
     <body>
         <div class="overlay">
@@ -21,6 +56,7 @@
         </div>
            
         <div id="navigationdiv">
+            <button class="toggle-btn" onclick="toggleNav()">Toggle Navigation</button>
             <ul class="navigation">
                 <li><a id="home-navigation" onclick="navigate(home)">Home</a></li>
                 <li><a id="resume-navigation" onclick="navigate(resume)">Resume</a></li>
@@ -29,14 +65,7 @@
                 <li><a id="contact-navigation" onclick="navigate(contact)">Contact</a></li>
                 <li><a id="mute-navigation" class="muteButton" onclick="muteToggle()">sound on</a></li>
                 <li class="dropdown" style="float:right"><a href="#">Language</a>
-                    <ul style="
-                    display: block;
-                    position: absolute;
-                    background-color: #000000;
-                    border: 1px solid #000000;
-                    padding: 0;
-                    z-index: 1;
-                    list-style-type: none;" class="dropdown-menu">
+                    <ul class="dropdown-menu">
                         <li><a onclick="setLanguage('english')">english</a></li> 
                         <li><a onclick="setLanguage('french')">francais</a></li>
                         <li><a onclick="setLanguage('chinese')">中文</a></li>
@@ -58,3 +87,15 @@
     </body>
 </html>
 <script src="script.js"></script>
+<script>
+    navigation = document.querySelector(".navigation")
+    function toggleNav() {
+if (navigation.style.display === "block") {
+navigation.style.display = "none";
+console.log('hide');
+} else {
+    navigation.style.display = "block";
+    console.log('show');
+}
+}
+</script>

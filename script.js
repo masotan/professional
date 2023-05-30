@@ -313,18 +313,25 @@ function overlayenter() {
 }
 
 function setLanguage(language) {
-  setNavigationLanguage(language);//navigation should change to target language
-  setContentLanguage(language);//content should change to target language
+  body.style.animation = "display-fadeinout 1s";
+    setTimeout(function() {
+      setNavigationLanguage(language);//navigation should change to target language
+      setContentLanguage(language);//content should change to target language
+    }, 500);
+    setTimeout(function() {
+        body.style.animation = "";
+    }, 1000);
+  
 }
 
 // setting up navigation variables
 
-const homenavigation = document.querySelector('#home-navigation');
-const resumenavigation = document.querySelector('#resume-navigation');
-const projectsnavigation = document.querySelector('#projects-navigation');
-const gallerynavigation = document.querySelector('#gallery-navigation');
-const contactnavigation = document.querySelector('#contact-navigation');
-const mutenavigation = document.querySelector('#mute-navigation');
+homenavigation = document.querySelector('#home-navigation');
+resumenavigation = document.querySelector('#resume-navigation');
+projectsnavigation = document.querySelector('#projects-navigation');
+gallerynavigation = document.querySelector('#gallery-navigation');
+contactnavigation = document.querySelector('#contact-navigation');
+mutenavigation = document.querySelector('#mute-navigation');
 
 function setNavigationLanguage(language) {
   homenavigation.textContent = homenavigationlanguage(language); // gets the home navigation language and sets it to home navigation
