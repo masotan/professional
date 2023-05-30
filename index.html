@@ -29,7 +29,14 @@
                 <li><a id="contact-navigation" onclick="navigate(contact)">Contact</a></li>
                 <li><a id="mute-navigation" class="muteButton" onclick="muteToggle()">sound on</a></li>
                 <li class="dropdown" style="float:right"><a href="#">Language</a>
-                    <ul class="dropdown-menu">
+                    <ul style="
+                    display: block;
+                    position: absolute;
+                    background-color: #000000;
+                    border: 1px solid #000000;
+                    padding: 0;
+                    z-index: 1;
+                    list-style-type: none;" class="dropdown-menu">
                         <li><a onclick="setLanguage('english')">english</a></li> 
                         <li><a onclick="setLanguage('french')">francais</a></li>
                         <li><a onclick="setLanguage('chinese')">中文</a></li>

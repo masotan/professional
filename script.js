@@ -251,14 +251,7 @@ function setDisplay(anything) {
     display.setHTML(anything);
 }
 
-//makes the website more interactive on mobile phones
 
-/*const menuToggle = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('nav');
-*/
-menuToggle.addEventListener('click', function() {
-  navigation.classList.toggle('active');
-});
 
 
 //this function should navigate to the desired page by clearing the page and loading the page
