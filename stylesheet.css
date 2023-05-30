@@ -121,9 +121,32 @@ ul.navigation li a:hover {
     background-color: #443b367c;
 }
 
-.listlanguagesnavigation li {
-    float:right;
-}
+div ul li:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    display: block;
+    margin: 0;
+    float: left;
+  }
+  
+  .dropdown-menu li a {
+      padding: 1px 1px;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #000000;
+  }
 
 @keyframes display-fadeinout {
     0% {opacity: 1;}
