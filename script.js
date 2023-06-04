@@ -68,7 +68,7 @@ resume = `
 
 <div class="section">
 <h2>Skills</h2>
-<p>Front-End: HTML, CSS, Javascript, ASP.NET, C#, React/p>
+<p>Front-End: HTML, CSS, Javascript, ASP.NET, C#, React</p>
 <p>Back-End: Node.js, Python, Django, C#, PHP</p>
 <p>Database: SQL, postgre</p>
 <p>Scripting: Javascript, C#, Java, C++, Python, GO</p>
@@ -614,13 +614,13 @@ return `
 </div>
 
 <div class="section">
-  <h2>Skills</h2>
-  <p>Front-End: HTML, CSS, Javascript</p>
-  <p>Frameworks: React.js, ASP.NET</p>
-  <p>Back-End: Node.js</p>
-  <p>Scripting: Javascript, Python</p>
-  <p>Source Control: Git, github</p>
-  <p>Database: SQL, postgre</p>
+<p>Front-End: HTML, CSS, Javascript, ASP.NET, C#, React</p>
+<p>Back-End: Node.js, Python, Django, C#, PHP</p>
+<p>Database: SQL, postgre</p>
+<p>Scripting: Javascript, C#, Java, C++, Python, GO</p>
+<p>Infrastructure: AWS, Azure Cloud, Jenkins CI/CD</p>
+<p>Workflow management: JIRA, AGILE Framework, SCRUM</p>
+<p>Source Control: Git, GitHub</p>
 </div>
 
 <div class="section">
