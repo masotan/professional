@@ -44,59 +44,65 @@ home = `
 
 //resume page code
 resume = `
-            <div class="hero-container">
-                <div id="hero">
-                    <div id="title">
-                        <h1>Resume</h1>
-                    </div>
-                    <div id="content">
-                        <p>My resume and work history is here</p>
-                    </div>     
-                </div>
-            </div>
-            <div class="resume-container">
-            <h1>John Doe</h1>
+<div class="hero-container">
+<div id="hero">
+    <div id="title">
+        <h1>Resume</h1>
+    </div>
+    <div id="content">
+        <p>My resume and work history is here</p>
+    </div>     
+</div>
+</div>
+<div class="resume-container">
+<h1>Daniel Monteiro</h1>
 
-            <div class="section">
-              <h2>Contact Information</h2>
-              <ul>
-                <li><span class="title">Address:</span> 123 Main St, City, State, Zip</li>
-                <li><span class="title">Phone:</span> (123) 456-7890</li>
-                <li><span class="title">Email:</span> john.doe@email.com</li>
-              </ul>
-            </div>
-          
-            <div class="section">
-              <h2>Summary</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum gravida sem id hendrerit. Suspendisse potenti. Aenean finibus felis id est suscipit tincidunt. Nam ultricies purus a ante consequat, id dignissim nisi convallis. Vivamus porttitor nisl eu arcu vulputate viverra. Duis sed fermentum sem.</p>
-            </div>
-          
-            <div class="section">
-              <h2>Education</h2>
-              <ul>
-                <li>
-                  <span class="title">Bachelor of Science in Computer Science</span>
-                  <br>
-                  <span class="subtitle">University of XYZ, Year</span>
-                </li>
-              </ul>
-            </div>
-          
-            <div class="section">
-              <h2>Experience</h2>
-              <ul>
-                <li>
-                  <span class="title">Software Engineer</span>
-                  <br>
-                  <span class="subtitle">ABC Company, Dates</span>
-                  <ul>
-                    <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
-                    <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            </div>
+<div class="section">
+<h2>Contact Information</h2>
+<ul>
+<li><span class="title">Address:</span> Thorold, ON</li>
+<li><span class="title">Phone:</span> (289) 968-2185</li>
+<li><span class="title">Email:</span> dandoescoding@hotmail.com</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Skills</h2>
+<p>Front-End: HTML, CSS, Javascript, ASP.NET, C#, React/p>
+<p>Back-End: Node.js, Python, Django, C#, PHP</p>
+<p>Database: SQL, postgre</p>
+<p>Scripting: Javascript, C#, Java, C++, Python, GO</p>
+<p>Infrastructure: AWS, Azure Cloud, Jenkins CI/CD</p>
+<p>Workflow management: JIRA, AGILE Framework, SCRUM</p>
+<p>Source Control: Git, GitHub</p>
+</div>
+
+<div class="section">
+<h2>Work</h2>
+<ul>
+<li>
+  <span class="title">Bachelor of Science in Computer Science</span>
+  <br>
+  <span class="subtitle">University of XYZ, Year</span>
+</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Experience</h2>
+<ul>
+<li>
+  <span class="title">Software Engineer</span>
+  <br>
+  <span class="subtitle">ABC Company, Dates</span>
+  <ul>
+    <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+    <li>Collaborated with cross-functional teams to deliver high-quality software products.</li>
+  </ul>
+</li>
+</ul>
+</div>
+</div>
             
 
 `;
@@ -596,24 +602,29 @@ return `
     </div>
 </div>
 <div class="resume-container">
-<h1>John Doe</h1>
+<h1>Daniel Monteiro</h1>
 
 <div class="section">
   <h2>Contact Information</h2>
   <ul>
-    <li><span class="title">Address:</span> 123 Main St, City, State, Zip</li>
-    <li><span class="title">Phone:</span> (123) 456-7890</li>
-    <li><span class="title">Email:</span> john.doe@email.com</li>
+    <li><span class="title">Address:</span> Thorold, ON</li>
+    <li><span class="title">Phone:</span> (289) 968-2185</li>
+    <li><span class="title">Email:</span> dandoescoding@hotmail.com</li>
   </ul>
 </div>
 
 <div class="section">
-  <h2>Summary</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum gravida sem id hendrerit. Suspendisse potenti. Aenean finibus felis id est suscipit tincidunt. Nam ultricies purus a ante consequat, id dignissim nisi convallis. Vivamus porttitor nisl eu arcu vulputate viverra. Duis sed fermentum sem.</p>
+  <h2>Skills</h2>
+  <p>Front-End: HTML, CSS, Javascript</p>
+  <p>Frameworks: React.js, ASP.NET</p>
+  <p>Back-End: Node.js</p>
+  <p>Scripting: Javascript, Python</p>
+  <p>Source Control: Git, github</p>
+  <p>Database: SQL, postgre</p>
 </div>
 
 <div class="section">
-  <h2>Education</h2>
+  <h2>Work</h2>
   <ul>
     <li>
       <span class="title">Bachelor of Science in Computer Science</span>
