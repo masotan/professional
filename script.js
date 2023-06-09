@@ -31,7 +31,7 @@ home = `
                         <h1>Daniel Monteiro</h1>
                     </div>
                     <div id="content">
-                        <p>A cloud systems architect, programmer, and chef</p>
+                        <p>Software developer, Full stack developer, and trained software architect</p>
                     </div>     
                 </div>
             </div>
@@ -508,7 +508,7 @@ return `
         <h1>Daniel Monteiro</h1>
     </div>
     <div id="content">
-        <p>A cloud systems architect, programmer, and chef</p>
+        <p>Software developer, Full stack developer, and trained software architect</p>
     </div>     
 </div>
 </div>
