@@ -31,7 +31,8 @@ home = `
                         <h1>Daniel Monteiro</h1>
                     </div>
                     <div id="content">
-                        <p>Software developer, Full stack developer, and trained software architect</p>
+                        <p>Software developer, Full stack developer, and trained software architect with a fierce appetite for<br>
+                        the development of cool stuff and new bleeding-edge technologies such as augmented reality</p>
                     </div>     
                 </div>
             </div>
@@ -44,7 +45,7 @@ home = `
 
 //resume page code
 resume = `
-<div class="hero-container">
+<div class="hero-container" style="background-image:url(https://images03.military.com/sites/default/files/styles/full/public/2022-10/jobpackets.jpg);background-size:cover;">
 <div id="hero">
     <div id="title">
         <h1>Resume</h1>
@@ -54,7 +55,9 @@ resume = `
     </div>     
 </div>
 </div>
+</div>
 <div class="resume-container">
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQX3PX4PGRdftCN8sntLPRVVzEi8m2qgG1nN57BAozzgrfwvNwIO6CWLtrIrgvZfHY6NWaoVjQXS13V/pub?embedded=true"></iframe>
 <h1>Daniel Monteiro</h1>
 
 <div class="section">
@@ -110,7 +113,7 @@ resume = `
 //projects page code
 projects = `
 
-            <div class="hero-container">
+<div class="hero-container" style="background-image:url(https://miro.medium.com/v2/resize:fit:1024/0*jlUybkZYz6yxWtdk.jpg);background-size:cover;">
                 <div id="hero">
                     <div id="title">
                         <h1>Projects</h1>
@@ -183,7 +186,7 @@ projects = `
 //gallery page code
 gallery = `
 
-            <div class="hero-container">
+<div class="hero-container" style="background-image:url(https://www.london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz);background-size:cover;">
                 <div id="hero">
                     <div id="title">
                         <h1>Gallery</h1>
@@ -227,7 +230,7 @@ gallery = `
 //contact page code
 contact = `
 
-            <div class="hero-container">
+<div class="hero-container" style="background-image:url(https://cdn.trendir.com/wp-content/uploads/old/trends/2016/02/11/exotic-wood-bedroom.jpg);background-size:cover;">
                 <div id="hero">
                     <div id="title">
                         <h1>Contact</h1>
