@@ -31,8 +31,7 @@ home = `
                         <h1>Daniel Monteiro</h1>
                     </div>
                     <div id="content">
-                        <p>Software developer, Full stack developer, and trained software architect with a fierce appetite for<br>
-                        the development of cool stuff and new bleeding-edge technologies such as augmented reality</p>
+                        <p>Full-stack Developer</p>
                     </div>     
                 </div>
             </div>
@@ -129,10 +128,10 @@ projects = `
               <h2>Project 1</h2>
               <ul>
                 <li>
-                  <span class="title">Project Name:</span> Project 1 Name
+                  <span class="title">Project Name:</span> My Professional Website
                 </li>
                 <li>
-                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  <span class="title">Description:</span> I made this website not only as my own professional site but to see how far can I push the three most basic web-development languages
                 </li>
                 <li>
                   <span class="title">Technologies Used:</span> HTML, CSS, JavaScript
@@ -143,41 +142,7 @@ projects = `
               </ul>
             </div>
           
-            <div class="section">
-              <h2>Project 2</h2>
-              <ul>
-                <li>
-                  <span class="title">Project Name:</span> Project 2 Name
-                </li>
-                <li>
-                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                  <span class="title">Technologies Used:</span> Python, Django
-                </li>
-                <li>
-                  <span class="title">Role:</span> Full Stack Developer
-                </li>
-              </ul>
-            </div>
-          
-            <div class="section">
-              <h2>Project 3</h2>
-              <ul>
-                <li>
-                  <span class="title">Project Name:</span> Project 3 Name
-                </li>
-                <li>
-                  <span class="title">Description:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                  <span class="title">Technologies Used:</span> React, Node.js
-                </li>
-                <li>
-                  <span class="title">Role:</span> Frontend Developer
-                </li>
-              </ul>
-            </div>
+            
             </div>
              
 
@@ -243,13 +208,12 @@ contact = `
 
             <div class="contacts-container">
                 <p>Thank you for your interest in reaching out to me. Please use the following contact information to get in touch.</p>
-
-  <h2>Contact Information</h2>
-  <ul>
-    <li><strong>Company Name:</strong> McDonalds</li>
-    <li><strong>Address:</strong> Victory Road</li>
-    <li><strong>Phone:</strong> 000-000-0000</li>
-    <li><strong>Email:</strong> thisistotallymy@email.com</li>
+    <h2>Contact Information</h2>
+    <ul>
+    <li><span class="title">Address:</span> Thorold, ON</li>
+    <li><span class="title">Phone:</span> (289) 968-2185</li>
+    <li><span class="title">Email:</span> dandoescoding@hotmail.com</li>
+    </ul>
   </ul>
             </div>
             
